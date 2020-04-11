@@ -51,7 +51,6 @@ def run_watcher(pattern: str, command: str, run_on_start: bool=False) -> None:
             files.update(new_files)
 
 
-
 def parser() -> argparse.ArgumentParser:
     """ Creates a parser using argparse """
 
@@ -86,3 +85,4 @@ def parser() -> argparse.ArgumentParser:
 if __name__ == "__main__":
     args = parser().parse_args()
     run_watcher(args.pattern, args.command, run_on_start=args.run_on_start)
+
