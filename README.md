@@ -8,24 +8,24 @@ simple and it just waits every seconds to execute the given command.
 Here's an example that will watch all [Latex](https://www.latex-project.org/)
 files and compile the `document.tex` file whenever any of them change
 at 1 second intervals:
-```python3
+```bash
 python3.8 watcher.py --pattern \*.tex --command "pdflatex document.tex"
 ```
 
 If I wanted to run the command given at the start, then I'd run the
 following:
-```python3
+```bash
 python3.8 watcher.py --pattern \*.tex --command "pdflatex document.tex" --run-on-start
 ```
 
 This also allows smaller flags so that you don't have to type so many extra
 characters. Here's how we can run the same thing above with smaller flags:
-```python3
+```bash
 python3.8 watcher.py -p \*.tex -c "pdflatex document.tex" -ros
 ```
 
 Finally, not sure what to do, just ask for help with:
-```python3
+```bash
 python3.8 watcher.py --help
 ```
 
